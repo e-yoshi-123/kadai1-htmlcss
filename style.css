@@ -1,0 +1,111 @@
+/* ブラウザがそれぞれ持っているCSSをリセットするための記述 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #6c6b6b;
+}
+
+body {
+  font-family: Arial、Helvetica、sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #38b48b;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  background-color: darkgreen;
+  color: #fff;
+}
+
+header h1 {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.nav-list {
+  text-align: center;
+  padding: 10px 20px;
+  margin: 0 auto;
+}
+
+.nav-list-item {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+main {
+  background-color: #ecfcdf;
+  padding: 10px 40px 40px 40px;
+}
+
+main h2 {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.main-flex {
+  display: flex;
+  align-items: flex-start;
+}
+
+.main-img {
+  width: 30%;
+  margin-right: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.main-intro {
+  background-color: #fff;
+  border-radius: 10px;
+  width: 70%;
+  padding: 10px;
+}
+
+.intro-flex {
+  display: flex;
+  line-height: 40px;
+}
+
+.item-key {
+  font-weight: bold;
+  width: 100px;
+}
+
+.item-value {
+}
+
+.item-social {
+  margin: 0 20px 20px 0;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  background-color: darkgreen;
+  text-align: center;
+  margin: 0 auto;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .main-flex {
+    display: block;
+  }
+  .main-img {
+    width: 100%;
+  }
+  .main-intro {
+    width: 100%;
+  }
+}
