@@ -10,6 +10,10 @@ body {
   font-family: Arial、Helvetica、sans-serif;
 }
 
+.wrapper {
+  min-height: 100%;
+}
+
 a {
   text-decoration: none;
   color: #38b48b;
@@ -31,6 +35,14 @@ header h1 {
   padding-top: 10px;
 }
 
+header h1 a {
+  color: #fff;
+}
+
+header li {
+  color: #fff;
+}
+
 .nav-list {
   text-align: center;
   padding: 10px 20px;
@@ -44,7 +56,7 @@ header h1 {
 
 main {
   background-color: #ecfcdf;
-  padding: 10px 40px 40px 40px;
+  padding: 10px 40px 240px 40px;
 }
 
 main h2 {
@@ -96,6 +108,8 @@ footer {
   text-align: center;
   margin: 0 auto;
   color: #fff;
+  position: absolute;
+  bottom: 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -107,5 +121,11 @@ footer {
   }
   .main-intro {
     width: 100%;
+  }
+  main {
+    padding: 10px 40px 40px 40px;
+  }
+  footer {
+    position: relative;
   }
 }
